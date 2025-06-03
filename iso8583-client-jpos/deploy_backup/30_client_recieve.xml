@@ -1,0 +1,10 @@
+<channel-adaptor name="hex-channel-receive" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+<channel class="org.jpos.iso.channel.HEXChannel" logger="Q2">
+    <property name="packager" value="org.jpos.iso.packager.PostPackager"/>
+    <property name="packager-config" value="classpath:iso8583/iso87ascii.xml"/>
+    <property name="host" value="localhost"/>
+    <property name="port" value="8000"/>
+    <property name="timeout" value="3000"/>
+</channel>
+<property name="name" value="hex-channel-receive"/>
+</channel-adaptor>

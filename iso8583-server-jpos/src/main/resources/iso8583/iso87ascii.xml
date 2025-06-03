@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE isopackager SYSTEM "genericpackager.dtd">
+<isopackager>
+    <isofield
+            id="0"
+            length="4"
+            name="MESSAGE TYPE INDICATOR"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield
+            id="1"
+            length="16"
+            name="BIT MAP"
+            class="org.jpos.iso.IFA_BITMAP"/>
+    <isofield
+            id="2"
+            length="19"
+            name="PRIMARY ACCOUNT NUMBER"
+            class="org.jpos.iso.IFA_LLNUM"/>
+    <isofield
+            id="3"
+            length="6"
+            name="PROCESSING CODE"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield
+            id="4"
+            length="12"
+            name="AMOUNT, TRANSACTION"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <!-- سایر فیلدها را اینجا تعریف کنید -->
+    <isofield
+            id="7"
+            length="10"
+            name="TRANSMISSION DATE AND TIME"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield
+            id="11"
+            length="6"
+            name="SYSTEM TRACE AUDIT NUMBER"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <!-- ... -->
+    <isofield
+            id="39"
+            length="2"
+            name="RESPONSE CODE"
+            class="org.jpos.iso.IFA_NUMERIC"/>
+    <!-- ... -->
+    <isofield
+            id="60"
+            length="25"
+            name="RESERVED PRIVATE"
+            class="org.jpos.iso.IFA_LLNUM"/>
+</isopackager>

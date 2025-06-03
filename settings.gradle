@@ -1,0 +1,4 @@
+rootProject.name = 'springboot-iso8583'
+
+include 'iso8583-client-jpos'
+include 'iso8583-server-jpos'

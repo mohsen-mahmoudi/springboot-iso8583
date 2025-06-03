@@ -1,0 +1,6 @@
+<logger name="Q2">
+    <property name="threshold" value="DEBUG" />
+    <handler name="CONSOLE" class="org.jpos.util.ConsoleLogListener">
+        <property name="threshold" value="DEBUG" />
+    </handler>
+</logger>

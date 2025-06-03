@@ -1,0 +1,5 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="customMux">
+    <property name="timeout" value="3000"/>
+    <in>hex-channel-send</in>
+    <out>hex-channel-receive</out>
+</mux>

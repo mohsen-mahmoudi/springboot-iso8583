@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<channel-adaptor name='hex-channel-adapter' class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+<channel name="hex-channel" class="org.jpos.iso.channel.HEXChannel" logger="Q2">
+    <property name="packager" value="org.jpos.iso.packager.PostPackager"/>
+    <property name="packager-config" value="classpath:iso8583/iso87ascii.xml"/>
+    <property name="host" value="localhost"/>
+    <property name="port" value="8000"/>
+    <property name="timeout" value="3000"/>
+</channel>
+<in>hex-send</in>
+<out>hex-receive</out>
+<reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
